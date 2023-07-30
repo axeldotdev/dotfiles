@@ -60,7 +60,7 @@
     * Typography
     **/
     "workbench.colorTheme": "GitHub Light",
-    "editor.fontFamily": "Operator Mono",
+    "editor.fontFamily": "Fira Code",
     "editor.fontSize": 15,
     "editor.lineHeight": 45,
     "editor.suggestFontSize": 15,
