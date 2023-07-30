@@ -36,6 +36,9 @@ mkdir $HOME/Herd
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos
 
+# Set global gitignore
+git config --global core.excludesfile ~/.gitignore_global
+
 # Install VSCode extensions
 while read extension; do code --install-extension $extension; done < vscode-extensions.txt
 
