@@ -54,3 +54,18 @@ Your Mac is now ready to use!
 ### Cleaning your old Mac (optionally)
 
 After you've set up your new Mac you may want to wipe and clean install your old Mac. Follow [this article](https://support.apple.com/guide/mac-help/erase-and-reinstall-macos-mh27903/mac) to do that. Remember to [backup your data](#backup-your-data) first!
+
+### Explanations
+
+This repository contains some cool files!
+
+- **.gitignore_global** make sure some files and folders are excluded, even if your projet don't have a .gitignore file
+- **ssh.sh** helps you create your SSH keys if you don't have one
+- **aliases.zsh** list some usefull (and less usefull) commands
+- **path.zsh** manage the $PATH variable of your Mac
+- **minimal.zsh-theme** is a simple but cool theme for your terminal
+- **Brewfile** list all the applications to install via Brew
+- **.macos** configure your Mac
+- **.zshrc** is your Shell settings file, it's symlink to your Mac user
+- **fresh.sh** install the all thing
+- **vscode/** contains the settings and keybindings json files and list extensions
