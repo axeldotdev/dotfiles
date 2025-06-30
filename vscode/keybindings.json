@@ -180,12 +180,12 @@
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+l",
+        "key": "ctrl+j",
         "command": "workbench.action.terminal.focusNextPane",
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+h",
+        "key": "ctrl+k",
         "command": "workbench.action.terminal.focusPreviousPane",
         "when": "terminalFocus"
     },
@@ -302,5 +302,19 @@
         "key": "escape",
         "command": "notifications.hideToasts",
         "when": "notificationToastsVisible"
+    },
+    {
+        "key": "cmd+k cmd+h",
+        "command": "workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "-workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "alt+cmd+i",
+        "command": "workbench.action.openQuickChat"
     }
 ]
