@@ -12,28 +12,16 @@
     "diffEditor.renderSideBySide": false,
     "editor.snippetSuggestions": "top",
     "editor.detectIndentation": false,
-    "window.nativeFullScreen": false,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "editor.inlineSuggest.enabled": true,
     "editor.guides.indentation": false,
     "files.autoSave": "onFocusChange",
-
-    /**
-    * Hide Everything
-    */
-    "workbench.activityBar.visible": false,
     "workbench.sideBar.location": "right",
-    "workbench.statusBar.visible": false,
-    "workbench.editor.showTabs": false,
-    "terminal.integrated.tabs.enabled": false,
+    "workbench.panel.defaultLocation": "right",
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.showTabs": "none",
     "editor.minimap.enabled": false,
-	"editor.lineNumbers": "off",
-
-    /**
-    * Silence The Noise
-    */
-    "breadcrumbs.enabled": false,
     "scm.diffDecorations": "none",
     "editor.hover.enabled": false,
     "editor.matchBrackets": "never",
@@ -41,11 +29,11 @@
     "editor.colorDecorators": false,
     "git.decorations.enabled": false,
     "workbench.startupEditor": "none",
-    "editor.lightbulb.enabled": false,
+    "editor.lightbulb.enabled": "off",
     "editor.selectionHighlight": false,
     "editor.overviewRulerBorder": false,
     "editor.renderLineHighlight": "none",
-    "editor.occurrencesHighlight": false,
+    "editor.occurrencesHighlight": "off",
     "problems.decorations.enabled": false,
     "editor.renderControlCharacters": false,
     "editor.hideCursorInOverviewRuler": true,
@@ -55,11 +43,6 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "editor.gotoLocation.multipleImplementations": "goto",
     "editor.gotoLocation.multipleTypeDefinitions": "goto",
-
-    /**
-    * Typography
-    **/
-    "workbench.colorTheme": "GitHub Light",
     "editor.fontFamily": "Fira Code",
     "editor.fontSize": 15,
     "editor.lineHeight": 45,
@@ -67,6 +50,9 @@
     "editor.suggestLineHeight": 28,
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.lineHeight": 1.5,
+    "workbench.fontAliasing": "auto",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontLigatures.enabled": true,
 
     /**
     * Find
@@ -98,10 +84,10 @@
     },
     "files.associations": {
         ".php_cs": "php",
-        ".php_cs.dist": "php"
+        ".php_cs.dist": "php",
+        // "*.blade.php": "php"
     },
     "emmet.triggerExpansionOnTab": true,
-    "blade.format.enable": true,
 
     /**
     * PHP
@@ -116,24 +102,64 @@
             {
                 "match": "\\.php$",
                 "cmd": "${workspaceFolder}/vendor/bin/pint ${file}"
+            },
+            {
+                "match": "\\.js$",
+                "cmd": "eslint --fix ${file}"
+            },
+            {
+                "match": "\\.js$",
+                "cmd": "prettier --write ${file}"
+            },
+            {
+                "match": "\\.ts$",
+                "cmd": "eslint --fix ${file}"
+            },
+            {
+                "match": "\\.ts$",
+                "cmd": "prettier --write ${file}"
+            },
+            {
+                "match": "\\.vue$",
+                "cmd": "eslint --fix ${file}"
+            },
+            {
+                "match": "\\.vue$",
+                "cmd": "prettier --write ${file}"
             }
         ]
     },
-
-    /**
-    * Prettier
-    **/
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
-    },
-    "prettier.requireConfig": true,
-    "prettier.useEditorConfig": false,
-
-    /**
-    * Window Settings
-    **/
-    "window.titleBarStyle": "native",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.accessibilitySupport": "off",
+    "editor.hover.sticky": false,
+    "debug.toolBarLocation": "hidden",
+    "editor.stickyScroll.enabled": false,
+    "breadcrumbs.enabled": false,
+    "workbench.tree.enableStickyScroll": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.minimumContrastRatio": 1,
+    "editor.semanticHighlighting.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "workbench.statusBar.visible": false,
+    "notebook.lineNumbers": "on",
+    "editor.lineNumbers": "off",
+    "workbench.activityBar.location": "hidden",
+    "workbench.panel.showLabels": false,
+    "window.titleBarStyle": "custom",
+    "terminal.integrated.tabs.enabled": false,
+    "git.blame.editorDecoration.enabled": false,
+    "workbench.editorAssociations": {
+        "*.svg": "default"
+    },
+    "chat.commandCenter.enabled": false,
+    "window.commandCenter": false,
+    "workbench.colorTheme": "Catppuccin Mocha",
 }
