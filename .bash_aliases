@@ -1,4 +1,5 @@
 alias c="clear"
+alias vim="nvim"
 
 alias sites="cd $HOME/Herd"
 
